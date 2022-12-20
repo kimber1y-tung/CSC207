@@ -1,4 +1,0 @@
-meetingEditLimit=7
-tradeLimit=4
-incompleteLimit=1
-overBorrowLimit=0
