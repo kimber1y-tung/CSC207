@@ -1,0 +1,125 @@
+JFDML JFormDesigner: "7.0.2.4.305" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.bundlePackage": "GUI.locales"
+	"i18n.bundleName": "WishListMenu"
+	"i18n.keyPrefix": "WishlistMenu"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq l {par l {seq l {space :p:42:p, comp label3:::p:173:p}, seq l {space :p:34:p, par l {comp label4:::p::p, comp scrollPane1:::p:312:p}}, seq t {space :p:34:p, par l {comp itemID::t:p:304:p, comp viewWishlist::t:p:312:p}}}, space :p:41:p, par l:::p {comp label5:::p::p, comp scrollPane2::::315:x, comp add::l:::x, comp delete::l:::x, comp systemInventoryB::::315:x}, space :0:39:x}, seq t {space ::638:x, par l {comp label1::t:p::p, comp back::t:p:103:p}}}, space :::p}}"
+			"$verticalGroup": "par l {seq l {par l {seq {space :p:43:p, comp label3:::p::p, space s:::p, comp itemID:::p::p, space :0:53:x}, seq l {comp label1:::p:38:p, space u:::p, comp add:::p:29:p, space s:::p, comp delete:::p:30:p, space ::30:x}}, par t {seq {comp label5:::p:18:p, space u:::p, comp scrollPane2:::p:309:p}, seq {comp label4:::p::p, space u:::p, comp scrollPane1:::p:309:p}}, space s:::p, par t {comp viewWishlist:::p:33:p, comp systemInventoryB:::p:33:p}, space s:::p, comp back:::p::p, space ::13:x}}"
+		} ) {
+			name: "this"
+			"background": new java.awt.Color( 12, 115, 115, 255 )
+			"font": new java.awt.Font( "Verdana", 0, 13 )
+			"border": new javax.swing.border.MatteBorder( 1, 2, 2, 1, new java.awt.Color( 0, 204, 204, 255 ) )
+			"maximumSize": new java.awt.Dimension( 750, 600 )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": new FormMessage( null, "WishlistMenu.label1.text" )
+				"font": new java.awt.Font( "Verdana", 0, 12 )
+				"foreground": new java.awt.Color( 153, 255, 255, 255 )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JList" ) {
+					name: "wishList"
+					"font": new java.awt.Font( "Verdana", 0, 16 )
+					"foreground": new java.awt.Color( 255, 255, 255, 255 )
+					"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					"background": sfield java.awt.Color darkGray
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "back"
+				"text": new FormMessage( null, "WishlistMenu.back.text" )
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+				"font": new java.awt.Font( "Verdana", 0, 12 )
+				"background": sfield java.awt.Color darkGray
+				"border": new javax.swing.border.MatteBorder( 1, 2, 2, 1, new java.awt.Color( 0, 204, 204, 255 ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "backActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "itemID"
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+				"font": new java.awt.Font( "Verdana", 0, 15 )
+				"background": new java.awt.Color( 12, 115, 115, 255 )
+				"border": new javax.swing.border.MatteBorder( 0, 0, 2, 0, new java.awt.Color( 255, 255, 255, 255 ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "delete"
+				"text": new FormMessage( null, "WishlistMenu.delete.text" )
+				"font": new java.awt.Font( "Verdana", 0, 14 )
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+				"background": new java.awt.Color( 0, 51, 51, 255 )
+				"opaque": true
+				"border": new javax.swing.border.MatteBorder( 1, 2, 2, 1, new java.awt.Color( 0, 204, 204, 255 ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "deleteActionPerformed", true ) )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane2"
+				add( new FormComponent( "javax.swing.JList" ) {
+					name: "sysInvList"
+					"font": new java.awt.Font( "Verdana", 0, 16 )
+					"foreground": new java.awt.Color( 255, 255, 255, 255 )
+					"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					"background": sfield java.awt.Color darkGray
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": new FormMessage( null, "WishlistMenu.label3.text" )
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+				"font": new java.awt.Font( "Verdana", 0, 16 )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "add"
+				"text": new FormMessage( null, "WishlistMenu.add.text" )
+				"font": new java.awt.Font( "Verdana", 0, 14 )
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+				"background": new java.awt.Color( 0, 51, 51, 255 )
+				"opaque": true
+				"border": new javax.swing.border.MatteBorder( 1, 2, 2, 1, new java.awt.Color( 0, 204, 204, 255 ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "addActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "addActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": new FormMessage( null, "WishlistMenu.label4.text" )
+				"font": new java.awt.Font( "Verdana", 0, 14 )
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": new FormMessage( null, "WishlistMenu.label5.text" )
+				"font": new java.awt.Font( "Verdana", 0, 14 )
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "viewWishlist"
+				"text": new FormMessage( null, "WishlistMenu.viewWishlist.text" )
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+				"font": new java.awt.Font( "Verdana", 0, 12 )
+				"background": new java.awt.Color( 0, 51, 51, 255 )
+				"opaque": true
+				"border": new javax.swing.border.MatteBorder( 1, 2, 2, 1, new java.awt.Color( 0, 204, 204, 255 ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "viewWishlistActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "viewWishlistActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "systemInventoryB"
+				"text": new FormMessage( null, "WishlistMenu.systemInventoryB.text" )
+				"font": new java.awt.Font( "Verdana", 0, 12 )
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+				"background": new java.awt.Color( 0, 51, 51, 255 )
+				"opaque": true
+				"border": new javax.swing.border.MatteBorder( 1, 2, 2, 1, new java.awt.Color( 0, 204, 204, 255 ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "systemInventoryBActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 85, 25 )
+			"size": new java.awt.Dimension( 750, 600 )
+		} )
+	}
+}

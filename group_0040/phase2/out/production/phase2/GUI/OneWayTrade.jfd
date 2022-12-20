@@ -1,0 +1,62 @@
+JFDML JFormDesigner: "7.0.2.4.305" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.bundlePackage": "GUI.locales"
+	"i18n.bundleName": "OneWayTrade"
+	"i18n.keyPrefix": "OneWayTrade"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {space ::253:x, par l {seq t {comp label4:::p:181:p, space :p:299:p}, seq t {comp button2:::p:181:p, space :p:386:p}}}, seq l {par t {comp availItems:::p:292:p, seq {par l {seq {space :p:85:p, comp label3:::p:69:p, space u:::p, par l {comp isPermanentCheckBox:::p:147:p, comp itemIdTF:::p:168:p}}, seq l {space :p:74:p, comp reqOneWayB:::p:278:p}}, space :p:96:p, comp scrollPane1:::p:301:p}}, space ::71:x}}"
+			"$verticalGroup": "par l {seq l {par l {seq {space :::p, comp label4:::p::p, space :p:84:p, par b {comp label3::b:p::p, comp itemIdTF::b:p::p}, space :::p, comp isPermanentCheckBox:::p::p, space :p:27:p, comp reqOneWayB:::p::p}, seq l {space :p:100:p, comp scrollPane1:::p:367:p}}, space s:::p, comp availItems:::p::p, space ::119:x, comp button2:::p::p, space :p:66:p}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "itemIdTF"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": new FormMessage( null, "OneWayTrade.label3.text" )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": new FormMessage( null, "OneWayTrade.label4.text" )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "reqOneWayB"
+				"text": new FormMessage( null, "OneWayTrade.reqOneWayB.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "reqOneWayBActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": new FormMessage( null, "OneWayTrade.button2.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "isPermanentCheckBox"
+				"text": new FormMessage( null, "OneWayTrade.isPermanentCheckBox.text" )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JList" ) {
+					name: "list1"
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "availItems"
+				"text": new FormMessage( null, "OneWayTrade.availItems.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "availItemsActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 25, 0 )
+			"size": new java.awt.Dimension( 820, 730 )
+		} )
+		add( new FormComponent( "javax.swing.JLabel" ) {
+			name: "label2"
+			"text": new FormMessage( null, "OneWayTrade.label2.text" )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 140, 130 )
+			"size": new java.awt.Dimension( 180, 16 )
+		} )
+	}
+}

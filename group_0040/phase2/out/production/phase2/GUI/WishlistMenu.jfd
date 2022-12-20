@@ -1,0 +1,77 @@
+JFDML JFormDesigner: "7.0.2.4.305" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.bundlePackage": "GUI.locales"
+	"i18n.bundleName": "WishListMenu"
+	"i18n.keyPrefix": "WishlistMenu"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {space :::x, par t {seq t {space :p:15:p, comp scrollPane1:::p:214:p, space :p:40:p, comp scrollPane2:::p:216:p, space :0:0:x}, seq t {space :0:0:x, comp label3:::p:114:p, space :::p, comp itemID:::p:114:p, space :::p, comp delete:::p:135:p, space :::p, comp add:::p:110:p, space :p:26:p}, seq t {space :p:78:p, comp label4:::p::p, space :p:146:p, comp label5:::p::p, space :::x}}}, seq {par l {seq {space :p:204:p, comp label1:::p:99:p}, seq l {space :p:43:p, comp viewWishlist:::p:152:p, space :p:100:p, comp systemInventoryB:::p:159:p}}, space :::x}, seq l {space :p:218:p, comp back:::p:132:p, space :0:0:x}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp label1:::p::p, space :p:7:p, par b {comp label4::b:p::p, comp label5::b:p::p}, space :p::p, par l {comp scrollPane2::::278:x, comp scrollPane1::::278:x}, space s:::p, par t {comp viewWishlist:::p::p, comp systemInventoryB:::p::p}, space :p:37:p, par b {comp label3::b:p::p, comp itemID::b:p::p, comp delete::b:p::p, comp add::b:p::p}, space u:::p, comp back:::p::p, space :p:14:p}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": new FormMessage( null, "WishlistMenu.label1.text" )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JList" ) {
+					name: "wishList"
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "back"
+				"text": new FormMessage( null, "WishlistMenu.back.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "backActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "itemID"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "delete"
+				"text": new FormMessage( null, "WishlistMenu.delete.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "deleteActionPerformed", true ) )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane2"
+				add( new FormComponent( "javax.swing.JList" ) {
+					name: "sysInvList"
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": new FormMessage( null, "WishlistMenu.label3.text" )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "add"
+				"text": new FormMessage( null, "WishlistMenu.add.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "addActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "addActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": new FormMessage( null, "WishlistMenu.label4.text" )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": new FormMessage( null, "WishlistMenu.label5.text" )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "viewWishlist"
+				"text": new FormMessage( null, "WishlistMenu.viewWishlist.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "viewWishlistActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "viewWishlistActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "systemInventoryB"
+				"text": new FormMessage( null, "WishlistMenu.systemInventoryB.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "systemInventoryBActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 10 )
+			"size": new java.awt.Dimension( 500, 500 )
+		} )
+	}
+}

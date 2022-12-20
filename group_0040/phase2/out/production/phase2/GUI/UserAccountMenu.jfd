@@ -1,0 +1,54 @@
+JFDML JFormDesigner: "7.0.2.4.305" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.bundlePackage": "GUI.locales"
+	"i18n.bundleName": "UserAccountMenu"
+	"i18n.keyPrefix": "UserAccountMenu"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space ::187:x, comp label1:::p:200:p, space :p:113:p}, seq t {space :p:43:p, par l:::p {comp wishlist::::222:x, comp topTradesB::l::222:x, comp frequentTraders::l::222:x, comp userInventory::l::222:x}, space ::34:x, par l:::p {comp back::::172:x, comp scrollPane1::::172:x}, space :p:29:p}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp label1:::p::p, par l {seq {space :p:59:p, comp wishlist:::p::p, space :p:33:p, comp userInventory:::p::p, space :p:28:p, comp frequentTraders:::p::p, space :p:38:p, comp topTradesB:::p::p}, seq l {space s:::p, comp scrollPane1:::p:392:p}}, space s:::p, comp back:::p::p, space ::20:x}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": new FormMessage( null, "UserAccountMenu.label1.text" )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "wishlist"
+				"text": new FormMessage( null, "UserAccountMenu.wishlist.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "wishlistActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "userInventory"
+				"text": new FormMessage( null, "UserAccountMenu.userInventory.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "userInventoryActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "frequentTraders"
+				"text": new FormMessage( null, "UserAccountMenu.frequentTraders.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "frequentTradersActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "topTradesB"
+				"text": new FormMessage( null, "UserAccountMenu.topTradesB.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "topTradesBActionPerformed", true ) )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JList" ) {
+					name: "list1"
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "back"
+				"text": new FormMessage( null, "UserAccountMenu.back.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "backActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 500, 500 )
+		} )
+	}
+}

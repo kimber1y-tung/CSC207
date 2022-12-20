@@ -1,0 +1,46 @@
+JFDML JFormDesigner: "7.0.2.4.305" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.bundlePackage": "GUI.locales"
+	"i18n.bundleName": "UserMainMenu"
+	"i18n.keyPrefix": "UserMainMenu"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:150:p, par t {comp logOut::::273:x, par t:::p {comp label2::t:::x, comp trademanage::l:::x, comp account::l:::x}}, space ::77:x}, seq t {space ::210:x, comp label3:::p::p, space :p:164:p}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp label3:::p::p, space :p:123:p, comp label2:::p::p, space :p:34:p, comp trademanage:::p::p, space u:::p, comp account:::p::p, space ::183:x, comp logOut:::p:18:p, space :p:32:p}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "trademanage"
+				"text": new FormMessage( null, "UserMainMenu.trademanage.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "trademanageActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": new FormMessage( null, "UserMainMenu.label2.text" )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "account"
+				"text": new FormMessage( null, "UserMainMenu.account.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2ActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "accountActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "accountActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": new FormMessage( null, "UserMainMenu.label3.text" )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "logOut"
+				"text": new FormMessage( null, "UserMainMenu.logOut.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "logOutActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "logOutActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 65, 5 )
+			"size": new java.awt.Dimension( 500, 500 )
+		} )
+	}
+}

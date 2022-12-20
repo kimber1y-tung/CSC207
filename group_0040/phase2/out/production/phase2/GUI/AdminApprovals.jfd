@@ -1,0 +1,84 @@
+JFDML JFormDesigner: "7.0.2.4.305" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.bundlePackage": "GUI.locales"
+	"i18n.bundleName": "AdminApprovals"
+	"i18n.keyPrefix": "AdminApprovals"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {par l {seq {space :p:29:p, par l {seq {par l {comp label2:::p:125:p, par t:l::p {seq {comp label3:::p:119:p, space :::p, comp itemIdTF:::p:87:p}, comp approveB::l:::x, comp denyB::l:::x}}, space ::31:x}, seq l {space :p:17:p, par t {comp userIdTF:::p:89:p, par l:::p {comp unfreezeB::::195:x, comp freezeB::::195:x}}, space :0:0:x}}}, seq l {space :p:39:p, comp back:::p::p, space ::155:x}}, par t {seq l {comp scrollPane1:::p:186:p, space :0:0:x}, comp displayItemsB::l::196:x, comp displayFlaggedUsers::t:::x, comp displayFrozenUsersB::t:::x}, space :p:32:p}, seq l {space :p:112:p, comp label1:::p:159:p, space ::229:x}}"
+			"$verticalGroup": "par l {seq l {par l {seq {space :p:40:p, comp scrollPane1:::p:327:p}, seq {space :::p, comp label1:::p::p, space :p:31:p, par b {comp label2::b:p::p, comp userIdTF::b:p::p}, space s:::p, comp freezeB:::p:20:p, space u:::p, comp unfreezeB:::p:20:p, space :p:94:p, par b {comp label3::b:p::p, comp itemIdTF::b:p::p}, space :p:28:p, comp approveB:::p:21:p, space :p:8:p, comp denyB:::p:19:p}}, space s:::p, comp displayItemsB:::p:19:p, space u:::p, comp displayFlaggedUsers:::p:20:p, space u:::p, par b {comp displayFrozenUsersB::b:p:18:p, comp back::b:p::p}, space ::17:x}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": new FormMessage( null, "AdminApprovals.label1.text" )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JList" ) {
+					name: "list1"
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "displayItemsB"
+				"text": new FormMessage( null, "AdminApprovals.displayItemsB.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "displayItemsBActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "displayFlaggedUsers"
+				"text": new FormMessage( null, "AdminApprovals.displayFlaggedUsers.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "displayFlaggedUsersActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "displayFrozenUsersB"
+				"text": new FormMessage( null, "AdminApprovals.displayFrozenUsersB.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button3ActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "displayFrozenUsersBActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": new FormMessage( null, "AdminApprovals.label2.text" )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "freezeB"
+				"text": new FormMessage( null, "AdminApprovals.freezeB.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "freezeBActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "userIdTF"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "unfreezeB"
+				"text": new FormMessage( null, "AdminApprovals.unfreezeB.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "unfreezeBActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": new FormMessage( null, "AdminApprovals.label3.text" )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "itemIdTF"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "approveB"
+				"text": new FormMessage( null, "AdminApprovals.approveB.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "approveBActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "denyB"
+				"text": new FormMessage( null, "AdminApprovals.denyB.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "denyBActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "back"
+				"text": new FormMessage( null, "AdminApprovals.back.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "backActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 5, 0 )
+			"size": new java.awt.Dimension( 500, 495 )
+		} )
+	}
+}

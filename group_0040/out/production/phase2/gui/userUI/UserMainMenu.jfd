@@ -1,0 +1,83 @@
+JFDML JFormDesigner: "7.0.2.0.298" Java: "1.8.0_231" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.bundlePackage": "GUI.locales"
+	"i18n.bundleName": "UserMainMenu"
+	"i18n.keyPrefix": "UserMainMenu"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq l {space :p:14:p, comp vacationStatus:::p:232:p, space ::265:x, comp label3:::p::p}, seq l {space :p:76:p, par l {comp accountMenu:::p:599:p, comp tradeMenu:::::x}, space :0:83:x}, seq l {space :p:20:p, comp label1:::p:292:p, space :0:446:x}}, space :::p}, seq t {space ::180:x, par l {seq t {comp label2:::p::p, space :p:154:p}, seq t {comp logOut:::p:284:p, space :p:232:p}}}}"
+			"$verticalGroup": "par l {seq l {par l {seq {space :p:18:p, comp label3:::p:31:p, space :p:108:p}, seq t {space :::p, comp vacationStatus:::p:30:p, space u:::p, comp label1:::p::p, space :p:88:p}}, comp label2:::p::p, space :p:31:p, comp tradeMenu:::p:73:p, space :p:29:p, comp accountMenu:::p:77:p, space ::145:x, comp logOut:::p::p, space :p:28:p}}"
+		} ) {
+			name: "this"
+			"background": new java.awt.Color( 12, 115, 115, 255 )
+			"preferredSize": new java.awt.Dimension( 750, 600 )
+			"font": new java.awt.Font( "Verdana", 0, 24 )
+			"border": new javax.swing.border.MatteBorder( 1, 1, 1, 1, new java.awt.Color( 0, 204, 204, 255 ) )
+			"maximumSize": new java.awt.Dimension( 750, 600 )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": new FormMessage( null, "UserMainMenu.label2.text" )
+				"font": new java.awt.Font( "Verdana", 0, 26 )
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": new FormMessage( null, "UserMainMenu.label3.text" )
+				"font": new java.awt.Font( "Verdana", 0, 20 )
+				"foreground": sfield java.awt.Color white
+				"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "logOut"
+				"text": new FormMessage( null, "UserMainMenu.logOut.text" )
+				"font": new java.awt.Font( "Verdana", 0, 16 )
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+				"background": new java.awt.Color( 0, 102, 102, 255 )
+				"opaque": true
+				"border": new javax.swing.border.MatteBorder( 1, 2, 2, 1, new java.awt.Color( 0, 204, 204, 255 ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "logOutActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "logOutActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": new FormMessage( null, "UserMainMenu.label1.text_2" )
+				"foreground": sfield java.awt.Color white
+				"font": new java.awt.Font( "Verdana", 0, 10 )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "tradeMenu"
+				"text": new FormMessage( null, "UserMainMenu.tradeMenu.text_2" )
+				"background": new java.awt.Color( 0, 51, 51, 255 )
+				"font": new java.awt.Font( "Verdana", 1, 20 )
+				"foreground": sfield java.awt.Color white
+				"opaque": true
+				"border": new javax.swing.border.MatteBorder( 1, 2, 2, 1, new java.awt.Color( 0, 204, 204, 255 ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "tradeMenuActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "vacationStatus"
+				"text": new FormMessage( null, "UserMainMenu.vacationStatus.text" )
+				"font": new java.awt.Font( "Verdana", 0, 14 )
+				"foreground": sfield java.awt.Color white
+				"background": new java.awt.Color( 12, 115, 115, 255 )
+				"border": new javax.swing.border.MatteBorder( 1, 2, 2, 1, new java.awt.Color( 0, 204, 204, 255 ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "vacationStatusActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "accountMenu"
+				"text": new FormMessage( null, "UserMainMenu.accountMenu.text" )
+				"background": new java.awt.Color( 0, 51, 51, 255 )
+				"foreground": sfield java.awt.Color white
+				"font": new java.awt.Font( "Verdana", 1, 20 )
+				"opaque": true
+				"border": new javax.swing.border.MatteBorder( 1, 2, 2, 1, new java.awt.Color( 0, 204, 204, 255 ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "accountMenuActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 65, 5 )
+			"size": new java.awt.Dimension( 770, 600 )
+		} )
+	}
+}

@@ -1,0 +1,87 @@
+JFDML JFormDesigner: "7.0.2.4.305" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.bundlePackage": "GUI.locales"
+	"i18n.bundleName": "AdminMainMenu"
+	"i18n.keyPrefix": "AdminMainMenu"
+	"i18n.autoExternalize": true
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq t {space :::x, comp label1:::p::p, space :0:0:x}, seq l {space :p:28:p, par l {comp logout::l:p:226:p, par l:::p {comp textField1:::::x, comp button6:::::x, comp label3::l:::x}}}, seq l {space :p:106:p, par l {seq {par l:::p {comp manageUser::::265:x, comp undo::t::265:x, comp resetLimitB::l::265:x}, space :::p, comp label2:::p:114:p}, seq l {comp label7:::p::p, space u:::p, comp incompleteB:::p:116:p}, seq l {par l {comp label4::l:p::p, comp label5::l:p::p, comp label6::l:p::p}, space :p:45:p, par l:::p {comp tradeB::l::121:x, comp overBorrowB::l::121:x, comp meetingB::l::121:x}}}, space :0:0:x}}, space :::p}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp label1:::p::p, space :p:52:p, comp undo:::p::p, space u:::p, comp manageUser:::p::p, space s:::p, comp label2:::p::p, space :p:7:p, par l:::p {comp label4:::p::p, comp meetingB::::22:x}, space u:::p, par l {comp label5:::p::p, comp overBorrowB:::p:30:p}, space s:::p, par t {comp label6:::p::p, comp tradeB:::p:24:p}, space s:::p, par b {comp label7::b:p::p, comp incompleteB::b:p::p}, space :::x, comp resetLimitB:::p::p, space :p:31:p, comp label3:::p::p, space :::p, comp textField1:::p:19:p, space :::p, comp button6:::p:21:p, space u:::p, comp logout:::p:19:p, space :p:24:p}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": new FormMessage( null, "AdminMainMenu.label1.text" )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "manageUser"
+				"text": new FormMessage( null, "AdminMainMenu.manageUser.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "manageUserActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "resetLimitB"
+				"text": new FormMessage( null, "AdminMainMenu.resetLimitB.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "resetLimitBActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button6"
+				"text": new FormMessage( null, "AdminMainMenu.button6.text" )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "undo"
+				"text": new FormMessage( null, "AdminMainMenu.undo.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "undoActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "logout"
+				"text": new FormMessage( null, "AdminMainMenu.logout.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "logoutActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": new FormMessage( null, "AdminMainMenu.label2.text" )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField1"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": new FormMessage( null, "AdminMainMenu.label3.text" )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": new FormMessage( null, "AdminMainMenu.label4.text" )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": new FormMessage( null, "AdminMainMenu.label5.text" )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label6"
+				"text": new FormMessage( null, "AdminMainMenu.label6.text" )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label7"
+				"text": new FormMessage( null, "AdminMainMenu.label7.text" )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "meetingB"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "overBorrowB"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "tradeB"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "incompleteB"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 5, 0 )
+			"size": new java.awt.Dimension( 500, 520 )
+		} )
+	}
+}

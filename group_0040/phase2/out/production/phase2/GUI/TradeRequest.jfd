@@ -1,0 +1,68 @@
+JFDML JFormDesigner: "7.0.2.4.305" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.bundlePackage": "GUI.locales"
+	"i18n.bundleName": "TradeRequest"
+	"i18n.keyPrefix": "TradeRequest"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {space ::333:x, comp label1:::p:156:p, space :p:166:p}, seq l {space :p:22:p, par l {seq {comp button1:::p:242:p, space ::214:x, comp back:::p:113:p, space :p:64:p}, seq {par l {seq {par l {seq {comp checkBox1:::p:114:p, space :::x, comp checkBox2:::p:116:p}, comp label3::::420:x, seq l {comp button2:::p:251:p, space :0:169:x}}, space s:::p, par l {comp label2:::p::p, comp scrollPane1:::p:168:p}}, seq {par t:::p {comp textField2::t:p:228:p, comp textField1::l:::x, comp label4::l:::x}, space :0:0:x}}, space :p:27:p}}}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp label1:::p::p, space :p:18:p, comp label2:::p::p, space u:::p, par l {seq l {comp label3:::p::p, space :::p, comp textField1:::p::p, space :::p, comp button2:::p::p, space :p:25:p, comp label4:::p::p, space u:::p, comp textField2:::p::p, space u:::p, par b {comp checkBox2::b:p::p, comp checkBox1::b:p::p}}, comp scrollPane1::l:p:308:p}, par l {seq {space :p:26:p, comp back:::p::p}, seq l {space :p:41:p, comp button1:::p::p}}, space ::43:x}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": new FormMessage( null, "TradeRequest.label1.text" )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JList" ) {
+					name: "list1"
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": new FormMessage( null, "TradeRequest.label2.text" )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": new FormMessage( null, "TradeRequest.label3.text" )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField1"
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "checkBox1"
+				"text": new FormMessage( null, "TradeRequest.checkBox1.text" )
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "checkBox2"
+				"text": new FormMessage( null, "TradeRequest.checkBox2.text" )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": new FormMessage( null, "TradeRequest.button1.text" )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "back"
+				"text": new FormMessage( null, "TradeRequest.back.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "backActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField2"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": new FormMessage( null, "TradeRequest.label4.text" )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": new FormMessage( null, "TradeRequest.button2.text" )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 655, 490 )
+		} )
+	}
+}

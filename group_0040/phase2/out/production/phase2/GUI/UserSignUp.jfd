@@ -1,0 +1,65 @@
+JFDML JFormDesigner: "7.0.2.4.305" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.bundlePackage": "GUI.locales"
+	"i18n.bundleName": "UserSignUp"
+	"i18n.keyPrefix": "UserSignUp"
+	"i18n.autoExternalize": true
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {par t {seq {space :p:95:p, par l {seq {par l {comp label5:::p:109:p, comp label2::l:p:109:p, comp label1::l:p:87:p}, space ::103:x, comp password:::p:93:p, space :p:3:p}, seq {comp label3:::p::p, space ::133:x, comp selectCity:::p::p}, comp button1::l:::x}}, seq t {space :::x, par l {comp language:::p::p, comp name:::p:96:p}}}, space :p:97:p}, seq l {space :p:194:p, comp label4:::p:96:p, space ::210:x}, seq t {space ::319:x, comp back:::p:158:p, space :p:23:p}}"
+			"$verticalGroup": "par l {seq l {space :p:27:p, comp label4:::p::p, space :p:37:p, par t {comp name:::p::p, comp label1:::p::p}, space :p:42:p, par b {comp label2::b:p::p, comp language::b:p::p}, space :p:35:p, par b {comp label3::b:p::p, comp selectCity::b:p::p}, space :p:32:p, par b {comp label5::b:p::p, comp password::b:p::p}, space :p:49:p, comp button1:::p::p, space ::41:x, comp back:::p::p, space :p:41:p}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": new FormMessage( null, "UserSignUp.label1.text" )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": new FormMessage( null, "UserSignUp.label2.text" )
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "selectCity"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "selectCityActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": new FormMessage( null, "UserSignUp.label3.text" )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "name"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": new FormMessage( null, "UserSignUp.label4.text" )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": new FormMessage( null, "UserSignUp.label5.text" )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "password"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": new FormMessage( null, "UserSignUp.button1.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "back"
+				"text": new FormMessage( null, "UserSignUp.back.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "backActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "language"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "comboBox1ActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 80, 10 )
+			"size": new java.awt.Dimension( 500, 500 )
+		} )
+	}
+}

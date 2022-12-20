@@ -1,0 +1,66 @@
+JFDML JFormDesigner: "7.0.2.4.305" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.bundlePackage": "GUI.locales"
+	"i18n.bundleName": "TradeManageMenu"
+	"i18n.keyPrefix": "TradeManageMenu"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {par t {comp back::t:p:132:p, par l {seq l {space :p:44:p, par l:::p {seq {par l:::p {comp label3::::200:x, comp label5::::200:x}, par l {seq {space :::x, comp button1:::p:151:p}, seq l {space :p:46:p, comp button2:::p:151:p}}}, comp button4::t:::x, comp button3::t:::x, comp label4::l:p:333:p}}, seq l {space :p:34:p, comp label2:::p:187:p, space :p:29:p, comp scrollPane1:::p:204:p}, seq l {space :p:200:p, comp label1:::p:140:p}}}, space ::46:x}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp label1:::p::p, par l {seq l {space :p:28:p, comp scrollPane1:::p:68:p}, seq l {space :p:42:p, comp label2:::p::p}}, space :p:150:p, comp label4:::p::p, par l {seq l {space :p:35:p, comp label3:::p::p}, seq {space :::x, comp button1:::p::p}}, par l {seq {space u:::p, comp button2:::p::p}, seq l {space :p:32:p, comp label5:::p::p}}, space :p:35:p, comp button3:::p::p, space s:::p, comp button4:::p::p, space :::x, comp back:::p::p, space :p:34:p}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": new FormMessage( null, "TradeManageMenu.label1.text" )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JList" ) {
+					name: "list1"
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": new FormMessage( null, "TradeManageMenu.label2.text" )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": new FormMessage( null, "TradeManageMenu.label3.text" )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": new FormMessage( null, "TradeManageMenu.button1.text" )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": new FormMessage( null, "TradeManageMenu.button2.text" )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button3"
+				"text": new FormMessage( null, "TradeManageMenu.button3.text" )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": new FormMessage( null, "TradeManageMenu.label4.text" )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": new FormMessage( null, "TradeManageMenu.label5.text" )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button4"
+				"text": new FormMessage( null, "TradeManageMenu.button4.text" )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "back"
+				"text": new FormMessage( null, "TradeManageMenu.back.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "backActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 500, 500 )
+		} )
+	}
+}

@@ -1,0 +1,81 @@
+JFDML JFormDesigner: "7.0.2.4.305" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.bundlePackage": "GUI.locales"
+	"i18n.bundleName": "LoginPage"
+	"i18n.autoExternalize": true
+	"i18n.keyPrefix": "LoginPage"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {space ::90:x, par l {comp label1::t:p::p, comp label2::t:p::p}, space :::p, par l {comp password:::p:167:p, comp username:::::x}, space :p:110:p}, seq {par l {seq {space :p:76:p, comp label3:::p:353:p}, seq l {space :p:207:p, comp button3:::p:87:p}}, space ::81:x}, seq {space ::176:x, par l {comp adminLogin:::p::p, comp userLogin:::::x}, space ::180:x}}"
+			"$verticalGroup": "par l {seq l {space :p:65:p, comp label3:::p:57:p, space u:::p, par l {comp label1:::p:31:p, comp username:::p::p}, space :::p, par l:::p {comp password:::::x, comp label2:::::x}, space :p:35:p, comp userLogin:::p::p, space :::p, comp adminLogin:::p::p, space :::p, comp button3:::p:19:p, space ::38:x}}"
+		} ) {
+			name: "this"
+			"background": new java.awt.Color( 0, 102, 102, 255 )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "username"
+				"border": new javax.swing.border.LineBorder( sfield java.awt.Color white, 1, false )
+				"background": sfield java.awt.Color lightGray
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "password"
+				"border": new javax.swing.border.LineBorder( sfield java.awt.Color white, 1, false )
+				"background": sfield java.awt.Color lightGray
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": new FormMessage( null, "LoginPage.label2.text" )
+				"font": new java.awt.Font( "Tw Cen MT Condensed", 1, 18 )
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+				"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "userLogin"
+				"text": new FormMessage( null, "LoginPage.userLogin.text" )
+				"font": new java.awt.Font( "Tw Cen MT Condensed", 1, 20 )
+				"foreground": sfield java.awt.Color darkGray
+				"iconTextGap": 18
+				"background": sfield java.awt.Color gray
+				"opaque": false
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "userLoginActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "adminLogin"
+				"text": new FormMessage( null, "LoginPage.adminLogin.text" )
+				"font": new java.awt.Font( "Tw Cen MT Condensed", 1, 20 )
+				"foreground": sfield java.awt.Color darkGray
+				"background": sfield java.awt.Color darkGray
+				"opaque": false
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "adminLoginActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": new FormMessage( null, "LoginPage.label3.text" )
+				"font": new java.awt.Font( "Tw Cen MT Condensed", 1, 28 )
+				"background": new java.awt.Color( 0, 102, 255, 255 )
+				"foreground": sfield java.awt.Color white
+				"border": new javax.swing.border.TitledBorder( null, "i18nKey=LoginPage.label3.border", 4, 0, new java.awt.Font( "Tw Cen MT Condensed", 1, 12 ), sfield java.awt.Color white )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button3"
+				"text": new FormMessage( null, "LoginPage.button3.text" )
+				"font": new java.awt.Font( "Tw Cen MT Condensed", 1, 15 )
+				"foreground": sfield java.awt.Color darkGray
+				"opaque": false
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button3ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": new FormMessage( null, "LoginPage.label1.text" )
+				"font": new java.awt.Font( "Tw Cen MT Condensed", 1, 18 )
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+				"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				"background": new java.awt.Color( 102, 102, 102, 255 )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 5, 0 )
+			"size": new java.awt.Dimension( 510, 365 )
+		} )
+	}
+}

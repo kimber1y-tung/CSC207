@@ -1,0 +1,62 @@
+JFDML JFormDesigner: "7.0.2.4.305" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.bundlePackage": "GUI.locales"
+	"i18n.bundleName": "ThreeWayTrade"
+	"i18n.keyPrefix": "ThreeWayTrade"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq l {space :p:158:p, comp button2:::p:225:p}, seq l {space :p:65:p, par l {seq {comp checkBox1:::p:149:p, space :p:35:p, comp checkBox2:::p:148:p}, comp button1:::p:307:p}}, seq {space :p:251:p, comp textField1:::p:159:p}, seq {space :p:53:p, comp label4:::p:202:p, space :::p, comp label3:::p:311:p}, seq l {space :p:83:p, par l {comp label5:::p:366:p, seq {comp label2:::p:162:p, space :::p, comp label1:::p:213:p}}}}, space :192:108:x}, seq t {space :0:347:x, comp button3:::p:115:p, space ::218:x}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp label1:::p::p, space :p:41:p, comp label5:::p::p, space u:::p, par b {comp label2::b:p::p, comp textField1::b:p::p}, space :p:35:p, comp button2:::p::p, space :p:84:p, par l {comp label3:::p:111:p, comp label4:::p::p}, space ::40:x, par b {comp checkBox1::b:p::p, comp checkBox2::b:p::p}, space u:::p, comp button1:::p::p, space :p:48:p, comp button3:::p::p, space :p:103:p}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": new FormMessage( null, "ThreeWayTrade.label1.text" )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField1"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": new FormMessage( null, "ThreeWayTrade.label2.text" )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": new FormMessage( null, "ThreeWayTrade.label3.text" )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": new FormMessage( null, "ThreeWayTrade.button1.text" )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": new FormMessage( null, "ThreeWayTrade.button2.text" )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button3"
+				"text": new FormMessage( null, "ThreeWayTrade.button3.text" )
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "checkBox1"
+				"text": new FormMessage( null, "ThreeWayTrade.checkBox1.text" )
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "checkBox2"
+				"text": new FormMessage( null, "ThreeWayTrade.checkBox2.text" )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": new FormMessage( null, "ThreeWayTrade.label4.text" )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": new FormMessage( null, "ThreeWayTrade.label5.text" )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 680, 665 )
+		} )
+	}
+}

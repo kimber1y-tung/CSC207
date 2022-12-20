@@ -1,0 +1,89 @@
+JFDML JFormDesigner: "7.0.2.4.305" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.bundlePackage": "GUI.locales"
+	"i18n.bundleName": "TradeMainMenu"
+	"i18n.keyPrefix": "TradeMainMenu"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:25:p, par l {seq {comp label4:::p:179:p, space :p:180:p, comp label5:::p:111:p, space :0:205:x}, seq l {par l {comp label3:::p::p, comp reqThreeWayB::l:p:238:p, comp reqTwoWayB::l:p:238:p, comp reqOneWayB::l:p:238:p, seq l {space :p:25:p, comp label2:::p:193:p}, seq l {space :p:14:p, comp viewAllItemsB:::p:234:p}}, par l {seq {space ::78:x, par l {comp back:::::x, seq {comp scrollPane1:::p:304:p, space :0:45:x}}}, seq t {space ::99:x, par l {comp button3:::p:238:p, comp button2:::p:238:p, comp button5::l:p:238:p}, space :p:90:p}}}}}, seq {par l {seq {space :p:268:p, comp label1:::p::p}, seq l {space :p:315:p, comp separator1:::p::p}}, space ::336:x}}"
+			"$verticalGroup": "par l {seq t {par l {seq l {space :::p, comp label1:::p::p, space s:::p, comp scrollPane1::::196:x}, seq l {space :p:83:p, comp label3:::p::p, space :::p, comp viewAllItemsB:::p::p, space ::101:x}}, space ::101:x, comp separator1:::p::p, space :::p, par b {comp label4::b:p::p, comp label5::b:p::p}, space :p:26:p, par b {comp reqOneWayB::b:p::p, comp button2::b:p::p}, space s:::p, par b {comp reqTwoWayB::b:p::p, comp button3::b:p::p}, space s:::p, par b {comp reqThreeWayB::b:p::p, comp button5::b:p::p}, space s:::p, comp label2:::p::p, space :p:103:p, comp back:::p::p, space :p:19:p}}"
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JList" ) {
+					name: "sysInvList"
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": new FormMessage( null, "TradeMainMenu.label1.text" )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "viewAllItemsB"
+				"text": new FormMessage( null, "TradeMainMenu.viewAllItemsB.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "viewAllItemsBActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": new FormMessage( null, "TradeMainMenu.button2.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2ActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button3"
+				"text": new FormMessage( null, "TradeMainMenu.button3.text" )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "back"
+				"text": new FormMessage( null, "TradeMainMenu.back.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "backActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "reqTwoWayB"
+				"text": new FormMessage( null, "TradeMainMenu.reqTwoWayB.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "requestTradesActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "reqTwoWayBActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": new FormMessage( null, "TradeMainMenu.label2.text" )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": new FormMessage( null, "TradeMainMenu.label3.text" )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "reqOneWayB"
+				"text": new FormMessage( null, "TradeMainMenu.reqOneWayB.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "reqOneWayBActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "reqThreeWayB"
+				"text": new FormMessage( null, "TradeMainMenu.reqThreeWayB.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "reqThreeWayBActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button5"
+				"text": new FormMessage( null, "TradeMainMenu.button5.text" )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": new FormMessage( null, "TradeMainMenu.label4.text" )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": new FormMessage( null, "TradeMainMenu.label5.text" )
+			} )
+			add( new FormComponent( "javax.swing.JSeparator" ) {
+				name: "separator1"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 50 )
+			"size": new java.awt.Dimension( 700, 700 )
+		} )
+	}
+}

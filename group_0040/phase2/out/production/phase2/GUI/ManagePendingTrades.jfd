@@ -1,0 +1,56 @@
+JFDML JFormDesigner: "7.0.2.4.305" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.bundlePackage": "GUI.locales"
+	"i18n.bundleName": "ManagePendingTrades"
+	"i18n.autoExternalize": true
+	"i18n.keyPrefix": "ManagePendingTrades"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:237:p, comp label1:::p:155:p, space ::263:x}, seq t {par t {seq t {space ::411:x, comp button1:::p:217:p}, seq t {par l {seq {par l {seq {space :p:21:p, comp label2::::127:x, space :::p, comp textField1:::p:184:p}, seq {space :p:32:p, comp label3::::306:x}, seq l {space :p:62:p, par l {comp button2::::276:x, seq {comp label4:::p:135:p, space :0:141:x}}}}, space :p:73:p}, seq t {space :0:214:x, comp textField2:::p:156:p, space :p:41:p}}, comp scrollPane1:::p:217:p}}, space :p:27:p}}"
+			"$verticalGroup": "par l {seq l {par l {seq {space :p:19:p, comp label1:::p::p, space :p:18:p, comp scrollPane1:::p:389:p}, seq {space :p:80:p, par b {comp label2::b:p::p, comp textField1::b:p::p}, space :p:26:p, comp label3:::p::p, space :p:33:p, comp button2:::p::p, space :p:33:p, par t {comp textField2:::p::p, comp label4:::p::p}}}, space s:::p, comp button1:::p::p, space ::165:x}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": new FormMessage( null, "ManagePendingTrades.label1.text" )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JList" ) {
+					name: "list1"
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": new FormMessage( null, "ManagePendingTrades.button1.text" )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField1"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": new FormMessage( null, "ManagePendingTrades.label2.text" )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": new FormMessage( null, "ManagePendingTrades.label3.text" )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": new FormMessage( null, "ManagePendingTrades.button2.text" )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textField2"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": new FormMessage( null, "ManagePendingTrades.label4.text" )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 655, 655 )
+		} )
+	}
+}

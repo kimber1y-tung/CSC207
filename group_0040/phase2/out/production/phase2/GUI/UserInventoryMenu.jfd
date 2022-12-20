@@ -1,0 +1,89 @@
+JFDML JFormDesigner: "7.0.2.4.305" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	"i18n.bundlePackage": "GUI.locales"
+	"i18n.bundleName": "UserInventoryMenu"
+	"i18n.keyPrefix": "UserInventoryMenu"
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {space ::183:x, par l {seq t {comp back:::p:177:p, space :p:55:p}, seq t {comp label1:::p:183:p, space :p:134:p}}}, seq {space :p:18:p, par l {comp label3::l:p:83:p, seq {comp label4:::p::p, space :::p, comp description:::p:113:p}, comp addItem::l:p:202:p, seq l {space :p:24:p, comp label2:::p::p}, par t:l {comp userInventory:::p:179:p, par t:::p {seq l {comp label5:::p:78:p, space :::p, comp itemId:::::x}, comp delete::l:p:198:p}}, seq l {comp label6:::p:68:p, space u:::p, par l:::p {comp name::::116:x, comp price::::116:x}, space u:::p, comp label7:::p:17:p}}, space s:::p, comp scrollPane1:::p:228:p, space ::11:x}}"
+			"$verticalGroup": "par l {seq l {space :::p, comp label1:::p::p, par l {seq {space :p:39:p, par b {comp label6::b:p::p, comp price::b:p::p, comp label7::b:p::p}, space u:::p, par b {comp name::b:p::p, comp label3::b:p::p}, space s:::p, par b {comp label4::b:p::p, comp description::b:p::p}, space :::p, comp addItem:::p::p, space :::p, comp label2:::p::p, space ::55:x, par b {comp label5::b:p::p, comp itemId::b:p::p}, space u:::p, comp delete:::p::p, space :p:82:p}, seq l {space s:::p, comp scrollPane1:::p:387:p, space ::21:x}}, par b {comp back::b:p::p, comp userInventory::b:p:30:p}, space :p:22:p}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": new FormMessage( null, "UserInventoryMenu.label1.text" )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "back"
+				"text": new FormMessage( null, "UserInventoryMenu.back.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "backActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "backActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "addItem"
+				"text": new FormMessage( null, "UserInventoryMenu.addItem.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2ActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2ActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "addItemActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": new FormMessage( null, "UserInventoryMenu.label2.text" )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "delete"
+				"text": new FormMessage( null, "UserInventoryMenu.delete.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "deleteActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "name"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": new FormMessage( null, "UserInventoryMenu.label3.text" )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": new FormMessage( null, "UserInventoryMenu.label4.text" )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "description"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": new FormMessage( null, "UserInventoryMenu.label5.text" )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "itemId"
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JList" ) {
+					name: "list1"
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "userInventory"
+				"text": new FormMessage( null, "UserInventoryMenu.userInventory.text" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "userInventoryActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "userInventoryActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "price"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label6"
+				"text": new FormMessage( null, "UserInventoryMenu.label6.text" )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label7"
+				"text": "$"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 70, 15 )
+			"size": new java.awt.Dimension( 500, 500 )
+		} )
+	}
+}
